@@ -1,0 +1,18 @@
+<amp-iframe src="https://23509-html.redtram.com/amp/g23509.html" layout="responsive"  resizable height="400" width="300" sandbox="allow-scripts allow-same-origin allow-popups">
+  <div overflow></div>
+  <amp-script layout="container" data-ampdevmode script="rt_amp_23509">
+    <span></span>
+    <script id="rt_amp_23509"  target="amp-script" type="text/javascript">
+      let iframe;
+        let int = setInterval(()=>{
+            try {
+                iframe = document.querySelector('iframe[src^="https://23509"]');
+                if(iframe){
+                    const lang = document.documentElement.lang;
+                    iframe.contentWindow.postMessage({type: 'lang', lang: lang}, '*');
+                }
+            }catch(e){}  
+        }, 200)
+    </script>
+  </amp-script>
+</amp-iframe>
